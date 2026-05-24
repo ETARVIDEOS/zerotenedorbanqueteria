@@ -1425,8 +1425,8 @@ footer {
 }
 
 .whatsapp-icon-wrapper {
-  width: 54px;
-  height: 54px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: var(--bg-secondary);
   border: 1px solid var(--brand-gold);
@@ -1446,8 +1446,8 @@ footer {
 }
 
 .whatsapp-img {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
@@ -2014,13 +2014,13 @@ footer {
   }
 
   .whatsapp-icon-wrapper {
-    width: 46px;
-    height: 46px;
+    width: 52px;
+    height: 52px;
   }
 
   .whatsapp-img {
-    width: 22px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
   }
 
   /* Levitations disabled on mobile for performance and better touch scroll */
