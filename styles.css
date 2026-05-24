@@ -53,6 +53,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -1419,7 +1420,7 @@ footer {
   position: fixed;
   bottom: var(--spacing-lg);
   right: var(--spacing-lg);
-  z-index: 999;
+  z-index: 9999;
   cursor: pointer;
 }
 
@@ -1934,7 +1935,11 @@ footer {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--spacing-md); /* Responsive padding from Image 2 */
+    padding: 0 var(--spacing-md);
+  }
+
+  .section-padding {
+    padding: 2.5rem 0;
   }
 
   .nav-links {
@@ -2003,8 +2008,9 @@ footer {
   }
   
   .whatsapp-float {
-    bottom: var(--spacing-sm);
-    right: var(--spacing-sm);
+    bottom: 24px;
+    right: 20px;
+    z-index: 9999;
   }
 
   .whatsapp-icon-wrapper {
