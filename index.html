@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Zero Tenedor | Banquetería Corporativa de Lujo</title>
+  <meta name="description" content="Servicios gastronómicos y banquetería de alta gama para eventos corporativos e institucionales en Santiago de Chile. Más de 30 años de experiencia y excelencia.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FLOATING WHATSAPP BUTTON (BOUNCE EFFECT) -->
+  <div class="whatsapp-float" id="whatsapp-floating-btn" title="Contactar por WhatsApp">
+    <div class="whatsapp-icon-wrapper">
+      <img src="assets/images/whatsapp-button.png" alt="WhatsApp" class="whatsapp-img">
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="main-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-main">ZERO TENEDOR</span>
+        <span class="logo-sub">Banquetería de Lujo</span>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Abrir Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navbar-menu">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button class="btn btn-primary open-cotizador-btn">Planificar Evento</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (COMPETITOR-INSPIRED LUXURY OVERLAY) -->
+  <section id="inicio" class="hero">
+    <video autoplay loop muted playsinline class="hero-bg-video">
+      <source src="assets/images/hero_video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag anim-fade-in">Gastronomía Corporativa Exclusiva</span>
+        <h1 id="hero-typing-text" class="typing-cursor" data-text="Experiencias Culinarias de Alto Nivel">Experiencias Culinarias de Alto Nivel</h1>
+        <p class="hero-desc anim-slide-in-right">Planificamos y producimos eventos institucionales memorables con la sofisticación, el detalle y la excelencia que su empresa requiere.</p>
+        <div class="hero-btns anim-zoom-in">
+          <a href="#servicios" class="btn btn-secondary">Nuestros Servicios</a>
+          <button class="btn btn-primary open-cotizador-btn">Planificar Evento</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION (SECCIÓN DE NÚMEROS DE LA COMPETENCIA) -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card anim-zoom-in">
+        <div class="stat-number">30+</div>
+        <div class="stat-label">Años de Trayectoria</div>
+        <div class="stat-desc">Tradición familiar gastronómica</div>
+      </div>
+      <div class="stat-card anim-zoom-in">
+        <div class="stat-number">1,000+</div>
+        <div class="stat-label">Eventos Realizados</div>
+        <div class="stat-desc">Desarrollados con total éxito logístico</div>
+      </div>
+      <div class="stat-card anim-zoom-in">
+        <div class="stat-number">150+</div>
+        <div class="stat-label">Clientes Felices</div>
+        <div class="stat-desc">Empresas e instituciones que confían en nosotros</div>
+      </div>
+      <div class="stat-card anim-zoom-in">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Resolución Sanitaria</div>
+        <div class="stat-desc">Estándares de higiene y calidad al día</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION (CON RUTAS MULTIPÁGINAS COMO LA COMPETENCIA) -->
+  <section id="servicios" class="section-padding container">
+    <h2>Nuestros Servicios de Banquetería</h2>
+    <p style="text-align: center; max-width: 600px; margin: -10px auto var(--spacing-xl) auto; color: var(--text-secondary);">Seleccione el servicio de su interés para visualizar en detalle el catálogo de menús de autor y alternativas de platos.</p>
+    
+    <div class="services-multipage-grid">
+      <!-- Card Coffee Break -->
+      <a href="coffee-break.html" class="service-grid-card anim-zoom-in">
+        <img src="assets/images/coffee_break_main.jpg" alt="Coffee Break" class="service-grid-card-img">
+        <div class="service-grid-card-content">
+          <h3 class="service-grid-card-title">Coffee Break</h3>
+          <p class="service-grid-card-desc">Pausas ideales con café de grano, infusiones y finos bocados dulces y salados para reuniones corporativas.</p>
+          <span class="service-grid-card-link">Ver servicio</span>
+        </div>
+      </a>
+      
+      <!-- Card Desayunos -->
+      <a href="desayunos.html" class="service-grid-card anim-zoom-in">
+        <img src="assets/images/breakfast_main.jpg" alt="Desayunos" class="service-grid-card-img">
+        <div class="service-grid-card-content">
+          <h3 class="service-grid-card-title">Desayunos</h3>
+          <p class="service-grid-card-desc">Comience la jornada laboral con energía y frescura: jugos naturales, repostería y sándwiches croissant gourmet.</p>
+          <span class="service-grid-card-link">Ver servicio</span>
+        </div>
+      </a>
+
+      <!-- Card Brunch -->
+      <a href="brunch.html" class="service-grid-card anim-zoom-in">
+        <img src="assets/images/brunch_main.jpg" alt="Brunch" class="service-grid-card-img">
+        <div class="service-grid-card-content">
+          <h3 class="service-grid-card-title">Brunch</h3>
+          <p class="service-grid-card-desc">Una propuesta versátil y abundante que combina desayunos y almuerzos para jornadas extensas.</p>
+          <span class="service-grid-card-link">Ver servicio</span>
+        </div>
+      </a>
+
+      <!-- Card Almuerzos -->
+      <a href="almuerzos.html" class="service-grid-card anim-zoom-in">
+        <img src="assets/images/lunch_main.jpg" alt="Almuerzos" class="service-grid-card-img">
+        <div class="service-grid-card-content">
+          <h3 class="service-grid-card-title">Almuerzos</h3>
+          <p class="service-grid-card-desc">Menús ejecutivos de alta cocina con platos de fondo, entradas y postres para directorios y juntas especiales.</p>
+          <span class="service-grid-card-link">Ver servicio</span>
+        </div>
+      </a>
+
+      <!-- Card Coctel -->
+      <a href="cocteles.html" class="service-grid-card anim-zoom-in">
+        <img src="assets/images/cocktail_main.jpg" alt="Cócteles" class="service-grid-card-img">
+        <div class="service-grid-card-content">
+          <h3 class="service-grid-card-title">Cócteles</h3>
+          <p class="service-grid-card-desc">Preparaciones de gala con bocados fríos y calientes volantes para aniversarios, lanzamientos y premiaciones.</p>
+          <span class="service-grid-card-link">Ver servicio</span>
+        </div>
+      </a>
+      
+      <!-- Card Planificador -->
+      <div class="service-grid-card anim-zoom-in open-cotizador-btn" style="cursor: pointer;">
+        <div class="service-grid-card-img" style="background: linear-gradient(135deg, var(--bg-tertiary), #232a35);"></div>
+        <div class="service-grid-card-content">
+          <h3 class="service-grid-card-title" style="color: var(--brand-gold);">Planificador Bespoke</h3>
+          <p class="service-grid-card-desc">Arme su propio menú seleccionando los bocados que prefiera y solicite su cotización a medida directamente.</p>
+          <span class="service-grid-card-link" style="color: var(--brand-gold);">Comenzar Ahora</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="nosotros" class="section-padding container">
+    <div class="about-grid">
+      <div class="about-content anim-slide-in-left">
+        <span class="about-tag">Quiénes Somos</span>
+        <h2 class="about-title">Trayectoria, Excelencia y Compromiso</h2>
+        <p class="about-text"><strong>Zero Tenedor</strong> es una banquetera de alto nivel especializada en el sector corporativo, dedicada a transformar reuniones de negocios y celebraciones de empresas en hitos culinarios excepcionales.</p>
+        <p>Nuestro equipo familiar cuenta con <strong>más de 30 años de experiencia</strong>, lo que nos permite ofrecer una ejecución impecable, seriedad y una capacidad de adaptación inigualable a las directrices de cada cliente.</p>
+        <p>Mantenemos operaciones continuas y estables con grandes empresas de la Región Metropolitana, como <strong>Aguas Andinas</strong> y sus filiales, garantizando siempre la máxima puntualidad, presentación impecable y platos de alta repostería.</p>
+        
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="highlight-icon">✦</span>
+            <div>
+              <h4 class="highlight-title">Calidad Certificada</h4>
+              <p class="highlight-desc">Procedimientos gastronómicos respaldados por resolución sanitaria vigente.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">✦</span>
+            <div>
+              <h4 class="highlight-title">Logística a Medida</h4>
+              <p class="highlight-desc">Servicio y transporte profesional adaptado a todo Santiago.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-image-container anim-slide-in-right">
+        <img src="assets/images/team_main.jpg" alt="Equipo de Zero Tenedor Banquetería" class="about-image">
+        <div class="about-image-overlay"></div>
+        <div class="about-badge">
+          <div class="badge-number">30+</div>
+          <div class="badge-text">Años de Tradición</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARACTERISTICS SECTION (SECCIÓN CARACTERÍSTICAS DE LA COMPETENCIA) -->
+  <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <h2>Nuestros Compromisos de Calidad</h2>
+      <p style="text-align: center; max-width: 600px; margin: -10px auto var(--spacing-xl) auto; color: var(--text-secondary);">El pilar fundamental de nuestra labor reside en los altos estándares que aplicamos en cada tarea que emprendemos.</p>
+      
+      <div class="characteristics-grid">
+        <div class="char-card anim-zoom-in">
+          <div class="char-icon">✓</div>
+          <div class="char-content">
+            <h3>Satisfacción del Cliente</h3>
+            <p>Experiencia gastronómica excepcional y de alta calidad adaptada a las necesidades de su directorio y colaboradores.</p>
+          </div>
+        </div>
+        <div class="char-card anim-zoom-in">
+          <div class="char-icon">✓</div>
+          <div class="char-content">
+            <h3>Experiencia y Confiabilidad</h3>
+            <p>Nuestra amplia trayectoria y relación continua con Aguas Andinas aseguran la seriedad e impecabilidad de nuestro servicio.</p>
+          </div>
+        </div>
+        <div class="char-card anim-zoom-in">
+          <div class="char-icon">✓</div>
+          <div class="char-content">
+            <h3>Entrega Puntual y Sin Fallas</h3>
+            <p>Planificamos rigurosamente los traslados y el montaje para garantizar que su servicio esté perfectamente dispuesto en el horario acordado.</p>
+          </div>
+        </div>
+        <div class="char-card anim-zoom-in">
+          <div class="char-icon">✓</div>
+          <div class="char-content">
+            <h3>Ingredientes 100% Calidad</h3>
+            <p>Trabajamos únicamente con proveedores seleccionados, asegurando frescura absoluta en cada bocado dulce y salado.</p>
+          </div>
+        </div>
+        <div class="char-card anim-zoom-in">
+          <div class="char-icon">✓</div>
+          <div class="char-content">
+            <h3>Cancelación Flexible</h3>
+            <p>Ofrecemos facilidades corporativas con flexibilidad para cambios y cancelaciones con previo aviso de 48 horas.</p>
+          </div>
+        </div>
+        <div class="char-card anim-zoom-in">
+          <div class="char-icon">✓</div>
+          <div class="char-content">
+            <h3>Pedido Fácil y Cotizador</h3>
+            <p>Diseñamos su propuesta personalizada a través de nuestro planificador interactivo y coordinamos los detalles directo a su WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROTATING GALLERY SECTION (GALERÍA ROTATIVA DE INSTAGRAM) -->
+  <section id="galeria" class="section-padding gallery-slider-section">
+    <div class="container">
+      <h2>Galería de Eventos Corporativos</h2>
+      <p style="text-align: center; max-width: 600px; margin: -10px auto var(--spacing-md) auto; color: var(--text-secondary);">Una muestra visual de la preparación, el montaje y las especialidades que disponemos en eventos corporativos reales.</p>
+      
+      <div class="gallery-container anim-zoom-in">
+        <div class="gallery-track" id="gallery-track">
+          <!-- Slide 1 -->
+          <div class="gallery-slide">
+            <img src="assets/images/coffee_break_main.jpg" alt="Montaje Coffee Break">
+            <div class="gallery-slide-overlay">
+              <span class="gallery-slide-title">Montaje Coffee Break Corporativo</span>
+              <span class="gallery-slide-tag">@zerotenedor_banqueteria</span>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="gallery-slide">
+            <img src="assets/images/lunch_main.jpg" alt="Almuerzo de Directorio">
+            <div class="gallery-slide-overlay">
+              <span class="gallery-slide-title">Servicio de Almuerzo Ejecutivo</span>
+              <span class="gallery-slide-tag">@zerotenedor_banqueteria</span>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="gallery-slide">
+            <img src="assets/images/brunch_main.jpg" alt="Banquete de Brunch">
+            <div class="gallery-slide-overlay">
+              <span class="gallery-slide-title">Estación Brunch de Alta Variedad</span>
+              <span class="gallery-slide-tag">@zerotenedor_banqueteria</span>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="gallery-slide">
+            <img src="assets/images/cocktail_ref1.jpg" alt="Bocados de Cóctel">
+            <div class="gallery-slide-overlay">
+              <span class="gallery-slide-title">Detalle de Tapaditos y Brochetas Calientes</span>
+              <span class="gallery-slide-tag">@zerotenedor_banqueteria</span>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="gallery-slide">
+            <img src="assets/images/team_main.jpg" alt="Nuestro Equipo Gastronómico">
+            <div class="gallery-slide-overlay">
+              <span class="gallery-slide-title">Nuestro Equipo en Planta Padre Hurtado</span>
+              <span class="gallery-slide-tag">@zerotenedor_banqueteria</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Controls -->
+        <button class="gallery-btn gallery-btn-prev" id="gallery-prev">◀</button>
+        <button class="gallery-btn gallery-btn-next" id="gallery-next">▶</button>
+      </div>
+      
+      <!-- Indicator Dots -->
+      <div class="gallery-dots" id="gallery-dots"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION (RESEÑAS CON EFECTO FLOTANTE) -->
+  <section id="reseñas" class="section-padding container">
+    <h2>Opiniones de Nuestros Clientes</h2>
+    <p style="text-align: center; max-width: 600px; margin: -10px auto var(--spacing-xl) auto; color: var(--text-secondary);">Lo que dicen las empresas que confían continuamente en nuestros servicios de banquetería de lujo.</p>
+    
+    <div class="testimonials-grid">
+      <!-- Testimonio 1 -->
+      <div class="testimonial-card">
+        <span class="quote-icon">“</span>
+        <p class="testimonial-text">El servicio de Coffee Break para nuestro aniversario superó las expectativas. La puntualidad, la frescura de los tapaditos de salmón y la presentación fue impecable.</p>
+        <div class="testimonial-author">
+          <span class="author-name">Alejandra Gómez</span>
+          <span class="author-company">Aguas Andinas</span>
+        </div>
+      </div>
+      
+      <!-- Testimonio 2 -->
+      <div class="testimonial-card">
+        <span class="quote-icon">“</span>
+        <p class="testimonial-text">Realizamos almuerzos ejecutivos de directorio con Zero Tenedor y la calidad culinaria es de nivel de alta cocina. Los garzones brindaron una atención impecable y muy profesional.</p>
+        <div class="testimonial-author">
+          <span class="author-name">Ricardo Torres</span>
+          <span class="author-company">EcoRiles</span>
+        </div>
+      </div>
+      
+      <!-- Testimonio 3 -->
+      <div class="testimonial-card">
+        <span class="quote-icon">“</span>
+        <p class="testimonial-text">Una empresa de absoluta seriedad. La documentación y la resolución sanitaria vigentes están al día, lo cual nos da la confianza administrativa que necesitamos para contrataciones.</p>
+        <div class="testimonial-author">
+          <span class="author-name">Karla Méndez</span>
+          <span class="author-company">ANAM S.A.</span>
+        </div>
+      </div>
+      
+      <!-- Testimonio 4 -->
+      <div class="testimonial-card">
+        <span class="quote-icon">“</span>
+        <p class="testimonial-text">El planificador interactivo web y la comunicación directa por WhatsApp facilitaron todo el proceso de cotización y cambios en el menú. Recomendados al 100%.</p>
+        <div class="testimonial-author">
+          <span class="author-name">Ignacio Silva</span>
+          <span class="author-company">Hidrogística</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS LOGO SECTION (ROTATORIO CONTINUO) -->
+  <section id="clientes" class="clients-section section-padding">
+    <div class="container">
+      <h3 class="clients-title">Empresas que Confían en Nosotros</h3>
+      <div class="marquee-container">
+        <div class="logo-marquee">
+          <!-- Aguas Andinas -->
+          <div class="client-logo-wrapper" title="Aguas Andinas">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 25 C10 12, 22 8, 30 18 C38 28, 22 42, 10 32 Z" fill="#0082c8"/>
+              <path d="M15 25 C15 17, 23 15, 27 21 C31 27, 21 35, 15 29 Z" fill="#d4af37"/>
+              <text x="45" y="27" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#faf8f5" letter-spacing="1">AGUAS</text>
+              <text x="45" y="39" font-family="'Inter', sans-serif" font-weight="400" font-size="10" fill="#94a3b8" letter-spacing="2">ANDINAS</text>
+            </svg>
+          </div>
+          <!-- EcoRiles -->
+          <div class="client-logo-wrapper" title="EcoRiles">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 18 C18 10, 24 16, 22 26 C20 36, 12 34, 10 18 Z" fill="#39b54a"/>
+              <path d="M22 20 C26 12, 32 18, 30 28 C28 38, 24 36, 22 20 Z" fill="#0082c8"/>
+              <text x="40" y="32" font-family="'Inter', sans-serif" font-weight="700" font-size="16" fill="#faf8f5" letter-spacing="0">eco<tspan fill="#39b54a">Riles</tspan></text>
+            </svg>
+          </div>
+          <!-- ANAM -->
+          <div class="client-logo-wrapper" title="ANAM S.A.">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 15 L25 15 L22 24 L27 34 L13 34 L18 24 Z" fill="none" stroke="#d4af37" stroke-width="2"/>
+              <circle cx="20" cy="27" r="2" fill="#0082c8"/>
+              <circle cx="23" cy="30" r="1.5" fill="#faf8f5"/>
+              <text x="38" y="28" font-family="'Inter', sans-serif" font-weight="800" font-size="18" fill="#faf8f5" letter-spacing="1">ANAM</text>
+              <text x="38" y="38" font-family="'Inter', sans-serif" font-weight="400" font-size="7" fill="#94a3b8" letter-spacing="3">ANALISIS AMBIENTALES</text>
+            </svg>
+          </div>
+          <!-- Hidrogistica -->
+          <div class="client-logo-wrapper" title="Hidrogística">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 20 H32 V26 H8 Z" fill="#0082c8"/>
+              <path d="M14 26 H26 V32 H14 Z" fill="#d4af37"/>
+              <circle cx="20" cy="15" r="4" fill="#0082c8"/>
+              <text x="40" y="30" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#faf8f5" letter-spacing="0.5">HIDROGÍSTICA</text>
+            </svg>
+          </div>
+          <!-- CNC -->
+          <div class="client-logo-wrapper" title="Cámara Nacional de Comercio (CNC)">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 35 V15 H30 V35 H10 Z M15 15 V35 M20 15 V35 M25 15 V35 M8 12 H32 M8 38 H32" fill="none" stroke="#d4af37" stroke-width="1.8"/>
+              <text x="38" y="27" font-family="'Inter', sans-serif" font-weight="700" font-size="18" fill="#faf8f5" letter-spacing="2">CNC</text>
+              <text x="38" y="37" font-family="'Inter', sans-serif" font-weight="500" font-size="8" fill="#64748b" letter-spacing="0.5">CHILE</text>
+            </svg>
+          </div>
+          
+          <!-- Repetidos para el loop infinito del Marquee -->
+          <div class="client-logo-wrapper" title="Aguas Andinas">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 25 C10 12, 22 8, 30 18 C38 28, 22 42, 10 32 Z" fill="#0082c8"/>
+              <path d="M15 25 C15 17, 23 15, 27 21 C31 27, 21 35, 15 29 Z" fill="#d4af37"/>
+              <text x="45" y="27" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#faf8f5" letter-spacing="1">AGUAS</text>
+              <text x="45" y="39" font-family="'Inter', sans-serif" font-weight="400" font-size="10" fill="#94a3b8" letter-spacing="2">ANDINAS</text>
+            </svg>
+          </div>
+          <div class="client-logo-wrapper" title="EcoRiles">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 18 C18 10, 24 16, 22 26 C20 36, 12 34, 10 18 Z" fill="#39b54a"/>
+              <path d="M22 20 C26 12, 32 18, 30 28 C28 38, 24 36, 22 20 Z" fill="#0082c8"/>
+              <text x="40" y="32" font-family="'Inter', sans-serif" font-weight="700" font-size="16" fill="#faf8f5" letter-spacing="0">eco<tspan fill="#39b54a">Riles</tspan></text>
+            </svg>
+          </div>
+          <div class="client-logo-wrapper" title="ANAM S.A.">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 15 L25 15 L22 24 L27 34 L13 34 L18 24 Z" fill="none" stroke="#d4af37" stroke-width="2"/>
+              <circle cx="20" cy="27" r="2" fill="#0082c8"/>
+              <circle cx="23" cy="30" r="1.5" fill="#faf8f5"/>
+              <text x="38" y="28" font-family="'Inter', sans-serif" font-weight="800" font-size="18" fill="#faf8f5" letter-spacing="1">ANAM</text>
+              <text x="38" y="38" font-family="'Inter', sans-serif" font-weight="400" font-size="7" fill="#94a3b8" letter-spacing="3">ANALISIS AMBIENTALES</text>
+            </svg>
+          </div>
+          <div class="client-logo-wrapper" title="Hidrogística">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 20 H32 V26 H8 Z" fill="#0082c8"/>
+              <path d="M14 26 H26 V32 H14 Z" fill="#d4af37"/>
+              <circle cx="20" cy="15" r="4" fill="#0082c8"/>
+              <text x="40" y="30" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#faf8f5" letter-spacing="0.5">HIDROGÍSTICA</text>
+            </svg>
+          </div>
+          <div class="client-logo-wrapper" title="Cámara Nacional de Comercio (CNC)">
+            <svg class="client-svg" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 35 V15 H30 V35 H10 Z M15 15 V35 M20 15 V35 M25 15 V35 M8 12 H32 M8 38 H32" fill="none" stroke="#d4af37" stroke-width="1.8"/>
+              <text x="38" y="27" font-family="'Inter', sans-serif" font-weight="700" font-size="18" fill="#faf8f5" letter-spacing="2">CNC</text>
+              <text x="38" y="37" font-family="'Inter', sans-serif" font-weight="500" font-size="8" fill="#64748b" letter-spacing="0.5">CHILE</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION (PREGUNTAS FRECUENTES ACCORDION) -->
+  <section id="faq" class="section-padding container">
+    <h2>Preguntas Frecuentes</h2>
+    <p style="text-align: center; max-width: 600px; margin: -10px auto var(--spacing-md) auto; color: var(--text-secondary);">Respondemos a las dudas operativas y logísticas más habituales de nuestros clientes corporativos.</p>
+    
+    <div class="faq-container">
+      <!-- FAQ 1 -->
+      <div class="faq-item anim-fade-in">
+        <div class="faq-question">¿Con cuánta anticipación debo reservar un servicio?</div>
+        <div class="faq-answer">
+          <p>Para Coffee Breaks y Desayunos estándar, recomendamos reservar con un mínimo de 3 a 5 días de anticipación. Para almuerzos y cócteles de gala, el plazo sugerido es de al menos 7 a 10 días para asegurar disponibilidad logística y coordinar montajes especiales.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ 2 -->
+      <div class="faq-item anim-fade-in">
+        <div class="faq-question">¿Cuentan con resolución sanitaria vigente?</div>
+        <div class="faq-answer">
+          <p>Sí, por supuesto. Contamos con todas las resoluciones sanitarias emitidas por la Seremi de Salud correspondientes a nuestra planta de producción ubicada en Padre Hurtado. Esto nos permite proveer a instituciones públicas y privadas de acuerdo a las normativas vigentes en Chile.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ 3 -->
+      <div class="faq-item anim-fade-in">
+        <div class="faq-question">¿Tienen opciones para personas con restricciones alimentarias?</div>
+        <div class="faq-answer">
+          <p>Sí, nos adaptamos a todo tipo de dietas. Disponemos de alternativas vegetarianas, veganas, sin lactosa y libres de gluten para nuestros tapaditos, bocados y repostería. Puedes seleccionar estas opciones directamente a través de nuestro planificador de eventos.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ 4 -->
+      <div class="faq-item anim-fade-in">
+        <div class="faq-question">¿Qué incluye el servicio de banquetería de Zero Tenedor?</div>
+        <div class="faq-answer">
+          <p>Nuestros servicios son llave en mano. Incluyen el traslado en vehículos con control térmico, montaje elegante, mantelería fina en tonos sobrios (negro, gris o lino), vajilla completa de porcelana, cristalería, arreglos florales discretos y el servicio de garzones profesionales uniformados, según el menú contratado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contacto" class="section-padding container">
+    <h2>Coordine su Próximo Evento</h2>
+    <div class="contact-grid">
+      <!-- Info Panel -->
+      <div class="contact-info-panel glass-card anim-slide-in-left">
+        <h3 class="contact-card-title">Atención Personalizada</h3>
+        <p>Estamos a su total disposición para responder consultas y estructurar propuestas a medida de su evento corporativo. Escríbanos o visítenos.</p>
+        
+        <div class="contact-details">
+          <div class="detail-item">
+            <div class="detail-icon-wrapper">☏</div>
+            <div class="detail-content">
+              <h4>Teléfono</h4>
+              <p><a href="tel:+56995332361">+56 9 9533 2361</a></p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon-wrapper">✉</div>
+            <div class="detail-content">
+              <h4>Correo Electrónico</h4>
+              <p><a href="mailto:Banqueteria.zerotenedor@gmail.com">Banqueteria.zerotenedor@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon-wrapper">⚲</div>
+            <div class="detail-content">
+              <h4>Planta de Producción</h4>
+              <p>Padre Hurtado, Región Metropolitana, Chile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Form Panel -->
+      <div class="contact-form-panel glass-card anim-slide-in-right">
+        <h3 class="contact-card-title">Envíenos un Mensaje</h3>
+        <form id="direct-contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-name">Nombre Completo</label>
+              <input type="text" id="c-name" class="form-control" placeholder="Ej. Alejandra Gómez" required>
+            </div>
+            <div class="form-group">
+              <label for="c-company">Empresa / Institución</label>
+              <input type="text" id="c-company" class="form-control" placeholder="Ej. Aguas Andinas" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-email">Correo Electrónico</label>
+              <input type="email" id="c-email" class="form-control" placeholder="Ej. contacto@empresa.cl" required>
+            </div>
+            <div class="form-group">
+              <label for="c-service">Tipo de Servicio</label>
+              <select id="c-service" class="form-control" required>
+                <option value="" disabled selected>Seleccione...</option>
+                <option value="Coffee Break">Coffee Break</option>
+                <option value="Desayuno">Desayuno</option>
+                <option value="Brunch">Brunch</option>
+                <option value="Almuerzo">Almuerzo</option>
+                <option value="Cóctel">Cóctel</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="c-message">Detalles del Requerimiento</label>
+            <textarea id="c-message" class="form-control" placeholder="Describa brevemente la fecha estimada, número de invitados y detalles específicos..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje por WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo-row">
+          <img src="assets/images/logo.jpg" alt="Logo Zero Tenedor" class="footer-logo-img">
+          <div class="logo">
+            <span class="logo-main" style="font-size: 1.5rem;">ZERO TENEDOR</span>
+            <span class="logo-sub" style="font-size: 0.6rem;">Banquetería de Lujo</span>
+          </div>
+        </div>
+        <p class="footer-desc" style="margin-top: 10px;">Una empresa familiar con más de 30 años de experiencia, especializada en la atención de eventos corporativos de alto estándar.</p>
+      </div>
+      
+      <div class="footer-links-col">
+        <h4>Servicios</h4>
+        <ul class="footer-links">
+          <li><a href="coffee-break.html">Coffee Break</a></li>
+          <li><a href="desayunos.html">Desayunos Corporativos</a></li>
+          <li><a href="brunch.html">Servicios de Brunch</a></li>
+          <li><a href="almuerzos.html">Almuerzos Ejecutivos</a></li>
+          <li><a href="cocteles.html">Cócteles & Cenas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Enlaces de Interés</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#nosotros">Trayectoria</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#reseñas">Reseñas</a></li>
+          <li><a href="https://www.instagram.com/zerotenedor_banqueteria/" target="_blank">Instagram Oficial</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Zero Tenedor Banquetería. Todos los derechos reservados.</p>
+      <p>Sitio web desarrollado por <a href="https://www.kreaycuenta.cl" target="_blank" style="color: var(--brand-gold); font-weight: 600;">KREAYCUENTA SpA</a></p>
+    </div>
+  </footer>
+
+  <!-- COTIZADOR MODAL INTERACTIVO -->
+  <div class="modal-overlay" id="cotizador-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Planificador de Evento</h3>
+        <button class="modal-close" id="close-cotizador">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <!-- Indicador de pasos -->
+        <div class="wizard-steps-indicator">
+          <div class="wizard-progress-bar" id="wizard-progress"></div>
+          <div class="step-indicator active" data-step="1">1</div>
+          <div class="step-indicator" data-step="2">2</div>
+          <div class="step-indicator" data-step="3">3</div>
+        </div>
+
+        <form id="wizard-form">
+          <!-- PASO 1: Selección de Servicio -->
+          <div class="wizard-panel active" id="wizard-step-1">
+            <h3 style="margin-bottom: var(--spacing-md); text-align: center;">¿Qué servicio desea cotizar?</h3>
+            <div class="selector-cards">
+              <div class="selector-card selected" data-value="Coffee Break">
+                <div class="selector-icon">☕</div>
+                <div class="selector-title">Coffee Break</div>
+              </div>
+              <div class="selector-card" data-value="Desayunos">
+                <div class="selector-icon">🥞</div>
+                <div class="selector-title">Desayuno</div>
+              </div>
+              <div class="selector-card" data-value="Brunch">
+                <div class="selector-icon">🥪</div>
+                <div class="selector-title">Brunch</div>
+              </div>
+              <div class="selector-card" data-value="Almuerzos">
+                <div class="selector-icon">🍽</div>
+                <div class="selector-title">Almuerzo</div>
+              </div>
+              <div class="selector-card" data-value="Coctel">
+                <div class="selector-icon">🍷</div>
+                <div class="selector-title">Cóctel</div>
+              </div>
+            </div>
+            <p style="text-align: center; color: var(--text-secondary); font-size: 0.9rem;">Seleccione una opción para ver las alternativas de menú disponibles en el siguiente paso.</p>
+          </div>
+
+          <!-- PASO 2: Selección de Bocados (Dinámico por JS) -->
+          <div class="wizard-panel" id="wizard-step-2">
+            <h3 style="margin-bottom: var(--spacing-sm); text-align: center;" id="wizard-step-2-title">Configure su Menú</h3>
+            <p class="limit-info" style="text-align: center;" id="wizard-step-2-limit">Seleccione las alternativas de su preferencia:</p>
+            
+            <div class="menu-options-container" id="dynamic-menu-options">
+              <!-- JS inserta las opciones aquí -->
+            </div>
+          </div>
+
+          <!-- PASO 3: Datos de Contacto y Invitados -->
+          <div class="wizard-panel" id="wizard-step-3">
+            <h3 style="margin-bottom: var(--spacing-md); text-align: center;">Detalles Finales del Evento</h3>
+            
+            <!-- Slider Invitados -->
+            <div class="slider-container">
+              <div class="slider-header">
+                <label for="w-guests" style="margin-bottom: 0;">Número de Personas (Invitados)</label>
+                <div class="slider-val-box"><span id="slider-value">30</span> pers.</div>
+              </div>
+              <input type="range" id="w-guests" class="range-slider" min="10" max="500" value="30" step="5">
+            </div>
+
+            <!-- Campos de Texto -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="w-name">Nombre de Contacto</label>
+                <input type="text" id="w-name" class="form-control" placeholder="Ej. Alejandra Gómez" required>
+              </div>
+              <div class="form-group">
+                <label for="w-company">Empresa / Institución</label>
+                <input type="text" id="w-company" class="form-control" placeholder="Ej. Aguas Andinas" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="w-email">Correo de Contacto</label>
+                <input type="email" id="w-email" class="form-control" placeholder="Ej. contacto@empresa.cl" required>
+              </div>
+              <div class="form-group">
+                <label for="w-date">Fecha Estimada</label>
+                <input type="date" id="w-date" class="form-control" required>
+              </div>
+            </div>
+            
+            <!-- WhatsApp Warning Info (Image 1 fix) -->
+            <div class="wizard-whatsapp-note">
+              ℹ Al hacer clic en "Solicitar Cotización por WhatsApp", se abrirá una conversación en WhatsApp enviando de inmediato el resumen detallado con el menú y los datos seleccionados para su coordinación rápida.
+            </div>
+          </div>
+
+          <!-- BOTONES DE NAVEGACIÓN DEL WIZARD -->
+          <div class="wizard-footer">
+            <button type="button" class="btn btn-secondary" id="wizard-prev-btn" style="visibility: hidden;">Anterior</button>
+            <button type="button" class="btn btn-primary" id="wizard-next-btn">Siguiente</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

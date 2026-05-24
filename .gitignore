@@ -1,0 +1,6 @@
+.agents/
+.interface-design/
+.gemini/
+.tempmediaStorage/
+scratch/
+node_modules/
