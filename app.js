@@ -1,83 +1,141 @@
 // --- DATA STORES FOR STEP 2 (DYNAMIC MENU CONFIGURATION) ---
 const menuOptionsData = {
-  "Coffee Break": [
-    {
-      category: "Bocados Dulces (Recomendado elegir 2 o más)",
-      items: [
-        "Galletas finas artesanales",
-        "Mini brownies de chocolate belga",
-        "Mini queque de zanahoria y nuez",
-        "Mini tartaleta de frutas",
-        "Cachitos con manjar",
-        "Mini panqueques con manjar",
-        "Pastelitos chilenitos",
-        "Profiteroles rellenos",
-        "Mini donuts glaseadas",
-        "Mini muffins surtidos"
-      ]
-    },
-    {
-      category: "Bocados Salados (Recomendado elegir 3 o más)",
-      items: [
-        "Tapaditos ave pimentón en pan de leche",
-        "Tapaditos jamón queso en pan croissant",
-        "Tapadito ave palta en pan croissant",
-        "Tapadito palmito tomate mayo vegana",
-        "Tapadito jamón queso en pan de leche",
-        "Tapadito queso philadelphia y salame en pan croissant",
-        "Tapadito huevo pepinillo en pan croissant"
-      ]
-    },
-    {
-      category: "Bebidas e Infusiones",
-      items: [
-        "Café de grano recién tostado",
-        "Té negro inglés y té verde",
-        "Aguas de hierbas naturales",
-        "Leche entera y sin lactosa",
-        "Jugo natural (Frambuesa, Piña, Naranja Plátano, Mango)"
-      ]
-    }
-  ],
-  "Desayunos": [
-    {
-      category: "Opciones Dulces",
-      items: [
-        "Plato de frutas frescas de estación",
-        "Trozo de torta hojarasca manjar",
-        "Trozo de torta tiramisú",
-        "Crepes con manjar y fruta",
-        "Pancakes con frutas y syrup",
-        "Wafles con fruta y salsa de frambuesas",
-        "Vasito de yogurt con granola",
-        "Macarrones surtidos",
-        "Brazo de reina casero"
-      ]
-    },
-    {
-      category: "Opciones Saladas (Tapaditos)",
-      items: [
-        "Salmón, queso philadelphia y rúcula en croissant",
-        "Ave, palta y mayo en croissant",
-        "Jamón serrano, queso philadelphia y lechuga en pan betarraga",
-        "Jamón y queso en pan croissant",
-        "Roast beef con mostaza antigua en croissant",
-        "Caprese (tomate, mozzarella y pesto) en pan de zapallo",
-        "Palta, tomate y aceite de oliva en pan de espinaca",
-        "Churrasco italiano en pan croissant"
-      ]
-    },
-    {
-      category: "Líquidos",
-      items: [
-        "Jugo natural de naranja, mango o frutilla",
-        "Café de grano",
-        "Leche entera o sin lactosa",
-        "Aguas de hierbas",
-        "Té negro"
-      ]
-    }
-  ],
+  "Coffee Break": {
+    isSpecialMenu: true,
+    options: [
+      {
+        title: "Coffe Simple",
+        details: [
+          "Jugo",
+          "Café de grano",
+          "Té",
+          "3 Galletas finas por persona",
+          "1 Mini trozo brownie",
+          "1 Tapadito de ave pimentón",
+          "1 Tapadito jamón queso",
+          "Incluye: Loza, coperia, mantelería, arreglo floral"
+        ]
+      },
+      {
+        title: "Coffe opción 1",
+        details: [
+          "Jugo",
+          "Café de grano",
+          "Té",
+          "Leche",
+          "3 Galletas finas por persona",
+          "1 Tapadito ave, pimentón, mayo.",
+          "1 Tapadito jamón queso",
+          "1 Tapadito vegetariano",
+          "1 Mini trozo de brownie",
+          "2 pastelitos árabes",
+          "Incluye: Loza, coperia, mantelería, arreglo floral"
+        ]
+      },
+      {
+        title: "Coffe opción 2",
+        details: [
+          "Jugo natural",
+          "Café de grano",
+          "Té",
+          "Leche",
+          "1 vadito  de frutas de la estación",
+          "2 mini churros con manjar",
+          "1 Tapaditos de lechuga, palmitos, tomate, mayonesa (vegana)",
+          "1 Tapadito queso filadelfia, ciboullete.",
+          "1 Tapadito Jamón-queso",
+          "1 Tapadito ave palta",
+          "Incluye: Loza, coperia, mantelería, arreglo floral."
+        ]
+      },
+      {
+        title: "Coffe opción 3",
+        details: [
+          "Jugo natural",
+          "Café de grano",
+          "Té",
+          "Leche",
+          "1 tapadito churrasco palta",
+          "1 tapadito jamón queso",
+          "1 tapadito quesillo, lechuga, tomate",
+          "1 Tapadito ave queso",
+          "1 mini vasito de fruta",
+          "1 mini mini pastelito fino",
+          "Incluye: Loza, coperia, mantelería, arreglo floral."
+        ]
+      }
+    ]
+  },
+  "Desayunos": {
+    isSpecialMenu: true,
+    options: [
+      {
+        title: "Desayuno opción 1",
+        details: [
+          "Jugo natural",
+          "Café de grano",
+          "Té",
+          "Leche sin lactosa",
+          "Trozo de torta o plato de fruta de la estación",
+          "1 tapadito ave pimentón en pan croissant",
+          "2 tapaditos jamón queso en pan croissant",
+          "1 tapadito vegetariano pan croissant",
+          "Cotización incluye :  vajilla, cristalería, servilletas, individuales de cuero o mantel , arreglo floral."
+        ]
+      },
+      {
+        title: "Desayuno opción 2",
+        details: [
+          "Jugo natural",
+          "Café de grano",
+          "Té",
+          "Leche sin lactosa",
+          "Plato de frutas de la estación",
+          "Quesillo y palta en pocillo individual",
+          "2 tostadas de pan de molde",
+          "1 tapadito huevo tocino",
+          "1 tapadito jamón queso pan croissant",
+          "1 tapadito ave tomate pan croissant",
+          "Cotización incluye : valija, cristalería, individuales de cuero o mantel, servilletas y arreglo floral."
+        ]
+      },
+      {
+        title: "Desayuno opción 3",
+        details: [
+          "Jugo natural",
+          "Café de grano",
+          "Té",
+          "Leche sin lactosa",
+          "Plato de frutas de la estación",
+          "2 galletas finas",
+          "1 Mini brounnie",
+          "Pocillo huevo con jamón",
+          "2 tostadas de pan de molde",
+          "1 tapadito ave tomate mayo en pan croissant",
+          "1 tapadito jamón queso en pan croissant",
+          "Incluye: vajilla , cristalería ,mantelería o individuales de cuero y arreglo floral."
+        ]
+      },
+      {
+        title: "Desayuno opción 4",
+        details: [
+          "Jugo natural",
+          "Café de grano",
+          "Té",
+          "Leche sin lactosa",
+          "Pancakes con fruta y jarabe syrup",
+          "Pocillo con jamón, queso, y mermelada",
+          "Vasito de yogurt con granola",
+          "2 tostadas pan de molde",
+          "2 galletas de soda",
+          "1 tapadito huevo Tocino en pan de espinaca",
+          "1 tapadito ave pimentón en pan de zapallo",
+          "1 Tapadito de palmito tomate en pan de beterraga",
+          "Incluye: vajilla cristalería, mantelería o individuales de cuero y arreglo floral."
+        ]
+      }
+    ]
+  },
   "Brunch": [
     {
       category: "Sándwiches Premium",
@@ -113,35 +171,94 @@ const menuOptionsData = {
       ]
     }
   ],
-  "Almuerzos": [
-    {
-      category: "Opciones de Entrada y Fondo",
-      items: [
-        "Ceviche de pescado blanco y camarón",
-        "Entrada fresca de estación",
-        "Filete de res braseado con puré trufado",
-        "Salmón a la plancha con vegetales grillados",
-        "Risotto de setas y champiñones silvestres"
-      ]
-    },
-    {
-      category: "Postres",
-      items: [
-        "Trozo de torta de la casa",
-        "Crème brûlée",
-        "Mousse de chocolate con coulis de frambuesa",
-        "Pie de limón premium"
-      ]
-    },
-    {
-      category: "Servicio y Montaje",
-      items: [
-        "Servicio de garzones de elite",
-        "Montaje completo de mantelería, vajilla y cristalería",
-        "Decoración floral de mesas"
-      ]
-    }
-  ],
+  "Almuerzos": {
+    isSpecialMenu: true,
+    options: [
+      {
+        title: "ALMUERZO EJECUTIVO OPCION 1",
+        details: [
+          "PLATO DE ENSALADA: Lechuga, apio, palta, tomate, papas mayo, choclo palmito y medallón de carne al jugo.",
+          "POSTRE:  Plato de fruta de la estación.",
+          "INCLUYE:  Pan, mantequilla, bebida, agua mineral , café de grano y chocolates finos",
+          "COTIZACIÓN INCLUYE: Vajilla, cristaleria, individuales de cuero o mantel , servilletas  arreglo floral."
+        ]
+      },
+      {
+        title: "ALMUERZO EJECUTIVO OPCION 2",
+        subCategories: [
+          {
+            name: "ENTRADA ELEGIR UNA OPCION",
+            items: [
+              "Crema de camarones y crutones",
+              "Fondo de Alcachofa rellena con quesillo ciboullete y mix verdes",
+              "Timbal de Palta camarón palmito lechuga",
+              "Palmitos envueltos en jamón acompañado de mix verdes y tomate cherry",
+              "Crema de zapallo crutones y crema acida",
+              "Crema de tomate natural queso parmesano y crutones"
+            ]
+          },
+          {
+            name: "FONDO ELEGIR UNA OPCION",
+            items: [
+              "Pechuga grille, salsa de champiñones acompañado de papas rusticas y espinaca a la crema",
+              "Medallón de carne al jugo acompañado de arroz, tomate y champiñones asados",
+              "Lasaña con salsa bolognesa individual",
+              "Trozo de costillar a la barbacur acompañado de puré rustico",
+              "Biffe de lomo liso acompañado de arroz al curry y vegetales salteados"
+            ]
+          },
+          {
+            name: "POSTRE ELEGIR UNA OPCION",
+            items: [
+              "Trozo de torta",
+              "Mouse de chirimoya alegre",
+              "Creme burlee",
+              "Mousse de caramelo",
+              "Flan de chocolate con frutos rojos",
+              "Panacota con salsa frambuesa"
+            ]
+          }
+        ],
+        details: [
+          "INCLUYE:  Pan, mantequilla, bebida, agua mineral , café de grano y chocolates finos",
+          "COTIZACIÓN INCLUYE: Vajilla, cristalería, mantelería o individuales de cuero, servilletas y arreglo floral"
+        ]
+      },
+      {
+        title: "ALMUERZO EJECUTIVO OPCION 3",
+        subCategories: [
+          {
+            name: "ENTRADA ELEGIR UNA OPCION",
+            items: [
+              "Ensalada capresse",
+              "Timbal palta camarón, decorado de mix verde",
+              "Timbal de Palta jaiba y mix verde"
+            ]
+          },
+          {
+            name: "FONDO ELEGIR UNA OPCION",
+            items: [
+              "Medallón de filete con salsa de champiñón, acompañado de gratín de papa a la crema",
+              "Salmon a la mantequilla y alcaparra, acompañado de pure al merken"
+            ]
+          },
+          {
+            name: "POSTRE ELEGIR UNA OPCION",
+            items: [
+              "Ensalada de fruta de la estación",
+              "Papaya rellena con crema y salsa de frambuesa",
+              "Tiramisu",
+              "Chesseckase de piña colada"
+            ]
+          }
+        ],
+        details: [
+          "INCLUYE: Pan, salsa, bebida, agua mineral, café de grano y chocolates finos.",
+          "COTIZACIÓN INCLUYE: Vajilla, cristaleria individuales de cuero, servilletas de género."
+        ]
+      }
+    ]
+  },
   "Coctel": [
     {
       category: "Bocados Fríos y Calientes (Recomendado elegir 4 o más)",
@@ -178,7 +295,7 @@ const menuOptionsData = {
 };
 
 // --- WHATSAPP NUMBER ---
-const WHATSAPP_NUMBER = "56995332361";
+const WHATSAPP_NUMBER = "56984927453";
 
 // --- WIZARD STATE MANAGER ---
 let currentStep = 1;
@@ -566,32 +683,40 @@ function populateStep2Menu() {
   const title = document.getElementById("wizard-step-2-title");
   if (title) title.textContent = `Menú Personalizado: ${selectedService}`;
   
-  const groups = menuOptionsData[selectedService];
-  if (!groups) return;
+  const data = menuOptionsData[selectedService];
+  if (!data) return;
 
-  groups.forEach(group => {
+  if (data.isSpecialMenu) {
     const groupSec = document.createElement("div");
-    groupSec.className = "menu-options-section";
-    
-    const secTitle = document.createElement("h4");
-    secTitle.className = "menu-options-section-title";
-    secTitle.textContent = group.category;
-    groupSec.appendChild(secTitle);
+    groupSec.className = "menu-options-section special-menu-section";
     
     const grid = document.createElement("div");
-    grid.className = "option-checkbox-grid";
+    grid.className = "option-checkbox-grid special-menu-grid";
     
-    group.items.forEach(item => {
+    data.options.forEach(option => {
+      const optionContainer = document.createElement("div");
+      optionContainer.className = "special-option-container";
+      
       const label = document.createElement("label");
-      label.className = "option-checkbox-label";
+      label.className = "option-checkbox-label special-option-label";
       
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
-      checkbox.value = item;
+      checkbox.name = "special-menu-option";
+      checkbox.value = option.title;
       
-      // Update background check color dynamically
+      // Mutual exclusion (tick only 1 option):
       checkbox.addEventListener("change", () => {
         if (checkbox.checked) {
+          // Uncheck all other checkboxes in this grid
+          grid.querySelectorAll("input[type='checkbox']").forEach(other => {
+            if (other !== checkbox) {
+              other.checked = false;
+              other.closest(".option-checkbox-label").classList.remove("checked");
+              // Trigger change event to hide/clear sub-categories of other options
+              other.dispatchEvent(new Event("change"));
+            }
+          });
           label.classList.add("checked");
         } else {
           label.classList.remove("checked");
@@ -599,13 +724,128 @@ function populateStep2Menu() {
       });
       
       label.appendChild(checkbox);
-      label.appendChild(document.createTextNode(" " + item));
-      grid.appendChild(label);
+      
+      const titleSpan = document.createElement("span");
+      titleSpan.className = "special-option-title";
+      titleSpan.textContent = " " + option.title;
+      label.appendChild(titleSpan);
+      
+      optionContainer.appendChild(label);
+      
+      // Render sub-categories if they exist
+      if (option.subCategories) {
+        const subSec = document.createElement("div");
+        subSec.className = "special-option-subcategories";
+        
+        option.subCategories.forEach((subCat, subIndex) => {
+          const subTitle = document.createElement("div");
+          subTitle.className = "sub-category-title-bullet";
+          subTitle.textContent = "• " + subCat.name + ":";
+          subSec.appendChild(subTitle);
+          
+          const subGrid = document.createElement("div");
+          subGrid.className = "option-checkbox-grid sub-option-grid";
+          
+          subCat.items.forEach(subItem => {
+            const subLabel = document.createElement("label");
+            subLabel.className = "option-checkbox-label option-radio-label";
+            
+            const radio = document.createElement("input");
+            radio.type = "radio";
+            radio.name = `${option.title.replace(/\s+/g, '_')}_${subIndex}`;
+            radio.value = `${subCat.name}: ${subItem}`;
+            
+            // Check parent option automatically when checked
+            radio.addEventListener("change", () => {
+              if (radio.checked) {
+                if (!checkbox.checked) {
+                  checkbox.checked = true;
+                  checkbox.dispatchEvent(new Event("change"));
+                }
+                
+                // Clear active class from all other radio labels in this subGrid
+                subGrid.querySelectorAll(".option-radio-label").forEach(l => {
+                  l.classList.remove("checked");
+                });
+                subLabel.classList.add("checked");
+              }
+            });
+            
+            subLabel.appendChild(radio);
+            subLabel.appendChild(document.createTextNode(" " + subItem));
+            subGrid.appendChild(subLabel);
+          });
+          
+          subSec.appendChild(subGrid);
+        });
+        
+        optionContainer.appendChild(subSec);
+        
+        // Listener to clear selections when parent checkbox is unchecked
+        checkbox.addEventListener("change", () => {
+          if (!checkbox.checked) {
+            subSec.querySelectorAll("input[type='radio']").forEach(radio => {
+              radio.checked = false;
+              radio.closest(".option-radio-label").classList.remove("checked");
+            });
+          }
+        });
+      }
+      
+      // Render details
+      const detailsList = document.createElement("ul");
+      detailsList.className = "special-option-details";
+      option.details.forEach(detail => {
+        const li = document.createElement("li");
+        li.textContent = detail;
+        detailsList.appendChild(li);
+      });
+      optionContainer.appendChild(detailsList);
+      
+      grid.appendChild(optionContainer);
     });
     
     groupSec.appendChild(grid);
     container.appendChild(groupSec);
-  });
+  } else {
+    // Standard rendering for Brunch and Coctel
+    data.forEach(group => {
+      const groupSec = document.createElement("div");
+      groupSec.className = "menu-options-section";
+      
+      const secTitle = document.createElement("h4");
+      secTitle.className = "menu-options-section-title";
+      secTitle.textContent = group.category;
+      groupSec.appendChild(secTitle);
+      
+      const grid = document.createElement("div");
+      grid.className = "option-checkbox-grid";
+      
+      group.items.forEach(item => {
+        const label = document.createElement("label");
+        label.className = "option-checkbox-label";
+        
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.value = item;
+        
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) {
+            label.classList.add("checked");
+          } else {
+            label.classList.remove("checked");
+          }
+        });
+        
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(" " + item));
+        grid.appendChild(label);
+      });
+      
+      groupSec.appendChild(grid);
+      container.appendChild(groupSec);
+    });
+  }
 }
 
 // Wizard submission: triggers WhatsApp redirect
@@ -622,10 +862,18 @@ function submitCotizacion() {
     return;
   }
 
-  // Get selected options
+  // Get selected options and sub-options
   const selectedOptions = [];
   document.querySelectorAll("#dynamic-menu-options input[type='checkbox']:checked").forEach(cb => {
     selectedOptions.push(cb.value);
+    
+    // Add subcategories details if selected
+    const parentContainer = cb.closest(".special-option-container");
+    if (parentContainer) {
+      parentContainer.querySelectorAll("input[type='radio']:checked").forEach(rb => {
+        selectedOptions.push(`   * ${rb.value}`);
+      });
+    }
   });
 
   // Construct message
